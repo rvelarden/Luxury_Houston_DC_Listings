@@ -16,11 +16,11 @@ Review.destroy_all
 end 
 
 10.times do
-    Agent.create(name: Faker::Name.name, telephone: Faker::PhoneNumber.cell_phone, work_address: Faker::Address.full_address,  email_address: Faker::Internet.email, years_of_experience: Faker::Number.decimal_part(digits: 2))
+    Agent.create(image: Faker::LoremFlickr.image, name: Faker::Name.name, telephone: Faker::PhoneNumber.cell_phone, work_address: Faker::Address.full_address,  email_address: Faker::Internet.email, years_of_experience: Faker::Number.decimal_part(digits: 2))
 end 
 
 10.times do
-    Property.create(address: Faker::Address.full_address, description: Faker::Lorem.paragraph, number_of_beds: Faker::Number.decimal_part(digits: 2), number_of_baths: Faker::Number.decimal_part(digits: 2), size: Faker::Number.decimal_part(digits: 4), price: Faker::Number.decimal_part(digits: 2), agent: Agent.all.sample, seller: Seller.all.sample)
+    Property.create(image: Faker::LoremFlickr.image, address: Faker::Address.full_address, description: Faker::Lorem.paragraph, number_of_beds: Faker::Number.decimal_part(digits: 2), number_of_baths: Faker::Number.decimal_part(digits: 2), size: Faker::Number.decimal_part(digits: 4), price: Faker::Number.decimal_part(digits: 2), agent: Agent.all.sample, seller: Seller.all.sample)
 end 
 
 10.times do

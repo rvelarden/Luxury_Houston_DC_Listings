@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   get '/agents' => 'agents#index'
   get '/properties' => 'properties#index'
+  get '/reviews' => 'reviews#index'
 
 end

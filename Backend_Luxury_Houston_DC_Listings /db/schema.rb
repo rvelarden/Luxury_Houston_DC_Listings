@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_01_25_220706) do
 
   create_table "agents", force: :cascade do |t|
+    t.string "image"
     t.string "name"
     t.string "telephone"
     t.string "work_address"
@@ -23,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_01_25_220706) do
   end
 
   create_table "properties", force: :cascade do |t|
+    t.string "image"
     t.string "address"
     t.string "description"
     t.string "number_of_beds"
