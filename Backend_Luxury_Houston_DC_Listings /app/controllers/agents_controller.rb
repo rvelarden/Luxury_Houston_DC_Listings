@@ -5,6 +5,6 @@ class AgentsController < ApplicationController
                 :except => [:created_at, :updated_at]
             }
         })
-        render json: cats
+        render json: agents
     end
 end
