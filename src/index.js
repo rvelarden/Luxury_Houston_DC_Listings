@@ -1,1 +1,6 @@
-URL = www.hotmail.com
+
+document.addEventListener('DOMContentLoaded', function() {
+fetchAgents()
+
+})
+
