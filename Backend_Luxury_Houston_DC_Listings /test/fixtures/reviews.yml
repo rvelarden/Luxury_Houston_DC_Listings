@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  comment: MyString
+  rating: MyString
+  agent_id: MyString
+
+two:
+  comment: MyString
+  rating: MyString
+  agent_id: MyString
